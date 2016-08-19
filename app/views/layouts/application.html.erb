@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
 </head>
 <body>
+<div id = "wrap">
 	<nav class="navbar navbar-default">
   		<div class="container-fluid">
     		<div class="navbar-header">
@@ -15,7 +16,34 @@
     		</div>
   		</div>
 	</nav>
-<%= yield %>
+
+ 	<div class = "container">
+    	<%= yield %>
+  	</div>
+</div>
+
+	<footer class="footer text-center">
+  		<div class="container">
+    	<div class = "row">
+    		<div class = "col-xs-12 col-md-4">
+       	 		<h4>About me</h4>
+        		<p>Sujan Joshi</p>
+        		<p>CSIT, HCOE</p>
+        		<p>9813227498</p>
+     		 </div>
+      		<div class = "col-xs-12 col-md-4">
+       	 		<h4>Contact</h4>
+        		<p><a href= "https://www.facebook.com/sujan.joshi.750">Facebook</a></p>
+        		<p><a href= "skj.jo0c@gmail.com">Gmail</a></p>
+        		<p><a href= "skjo0c@instagram.com">Instagram</a></p>
+     		 </div>
+      	<div class = "col-xs-12 col-md-4">
+      		<h4>Thanks to</h4>
+        	<h4>© TECHRISE 2016</h4>
+        	<p>All Rights Reserved</p>
+    	</div>
+  		</div>
+	</footer>
 
 </body>
 </html>
