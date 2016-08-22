@@ -4,7 +4,7 @@ body {
 }
 
 /* Wrapper for page content to push down footer */
-.wrap {
+#wrap {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
@@ -23,12 +23,27 @@ body {
 }
 
 .navbar-brand {
-  font-family: 'Creepster'
+  font-family: 'Creepster' !important;
 }
+.navbar-brand:hover {
+  color: red !important;
+}
+
 .navbar-default {
   background-color: rgba(211,211,211,.5)
 }
 .navbar-default .navbar-brand {
   font-size: 50px;
   color: blue;
+}
+
+.panel-ideas {
+  height: 400px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .panel-ideas {
+    height: auto;
+  }
 }
