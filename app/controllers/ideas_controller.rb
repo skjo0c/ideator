@@ -11,7 +11,7 @@ class IdeasController < ApplicationController
     end
     def update
       @idea = Idea.find(params[:id])
-      if @ideas.update(idea_params)
+      if @idea.update(idea_params)
         redirect_to root_path
       else
         redirect_to edit_idea_path(params[:id])
@@ -20,7 +20,7 @@ class IdeasController < ApplicationController
     def destroy
       @idea = Idea.find(params[:id])
       @idea.destroy
-      requiredirect_to root_path
+      redirect_to root_path
     end
   	private
     	def idea_params
