@@ -1,9 +1,11 @@
 development:
   adapter: postgresql
-  database: my_database_development
+  encoding: unicode
+  database: postgres
   pool: 5
-  timeout: 5000
-  localhost: local
+  username: postgres
+  password: asdfjy2u
+  min_messages: WARNING
 
 test:
   adapter: postgresql
